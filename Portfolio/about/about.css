@@ -32,7 +32,7 @@ label.logo{
 
 nav ul{
    float: right;
-   margin-right: 20px;
+   margin-right: -94px;
 }
 nav ul li{
    display: inline-block;
@@ -95,6 +95,7 @@ p {
 
 
 @media (max-width : 952px){
+   
    lable.logo{
        font-size: 30px;
        padding-left: 50px;
@@ -104,16 +105,19 @@ p {
    }
 }
 
-@media (max-width : 1106px){
+
+@media (max-width : 870px){
 
    nav {
-      width: 100%;
-      background-color: rgb(67,70,77);
-      height: 100px;
-  }
-  label.logo{
-   padding: 40px;
-}
+       background-color: rgb(67,70,77);
+       width: 100%;
+   }
+
+   label.logo{
+       padding: 30px;
+   }
+
+   
    
    .checkbtn {
        font-size: 30px;
@@ -129,7 +133,7 @@ p {
        width: 100%;
        height: 100vh;
        background-color: rgb(67,70,77);
-       top: 100px;
+       top: 70px;
        left: -100%;
        text-align: center;
        transition: all .5s;
