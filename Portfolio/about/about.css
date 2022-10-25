@@ -58,39 +58,41 @@ a.active,a:hover{
    display: none;
 }
 
-.row {
-   padding: 50px;
+section {
    display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
    justify-content: space-between;
-   flex-wrap: wrap;
-}
-
-.col-1 {
-   flex-basis: 35%;
-}
-
-.col-1 img {
+   padding: 50px;
    width: 100%;
-   border-radius: 20px;
 }
 
-.col-2 {
-   flex-basis: 60%;
+section article img {
+   width: 90%;
+   border-radius: 40px;
 }
 
-h1 {
-   font-size: 60px;
+section article h1 {
+   font-size: 40px;
    font-weight: 600;
 }
 
-p {
+section article p {
    padding-top: 20px;
 }
 
-.col-2 p a {
-   color: black;
-   background-color: rgb(67,70,77);
+section article p a {
+   color: white;
+   background-color: rgb(63, 86, 137);
    font-size: 20px;
+}
+
+.col-1 {
+   flex-basis: 45%;
+}
+
+.col-2 {
+   flex-basis: 50%;
 }
 
 
@@ -156,6 +158,20 @@ p {
    }
    .icon {
        color: white;
+   }
+   section {
+      display: block;
+      text-align: center;
+   }
+   section article p {
+      padding-bottom: 30px;
+   }
+   body {
+      background: url(/imgs/comingsoon.jpg) repeat;
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     color: white;
    }
 }
 
