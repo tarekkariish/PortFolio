@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/education/education.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Portfoilo</title>
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+            </label>
+        <label class="logo"><span>P</span>ortfoilo</label>
+        <ul class="nav">
+        <li><a href="/home/index.html">Home</a></li>
+        <li><a href="/about/about.html">About</a></li>
+        <li><a class="active" href="/education/education.html">Education & Skills</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li>
+    </ul>
+    </nav>
+
+    <div class="container">
+
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+    </div>
+
+    <article class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>UX/UI</span><br>Designing Web/App interfaces</li> <br>
+            <li><span>Web Development</span><br>Web Development ( Front-end )</li> <br>
+            <li><span>IT Support</span><br>Hardware, Networking, Maintinance</li> <br>
+        </ul>
+    </article>
+
+
+    <article class="tab-contents" id="experience">
+        <ul>
+            <li><span>Internship at PowerCoders</span><br>Teaching Assistant</li> <br>
+            <li><span>Web Development</span><br><a href="https://futurecoders.ch/de/" target="_blank">FutureCoders Web</a></li> <br>
+            <li><span>Co-head Catering</span><br>at film shoot "The Weight of the Land"</li> <br>
+        </ul>
+    </article>
+
+
+    <article class="tab-contents" id="education">
+        <ul>
+            <li><span>PowerCoders</span><br>Weekly business & Social skills training</li> <br>
+            <li><span>PowerCoders</span><br>Foundations in HTML, CSS, JS + Specialization track in WebDesign</li> <br>
+            <li><span>Institute for Computer Technologies</span><br>Hardware, Networking, Maintinance</li> <br>
+        </ul>
+    </article>
+
+</div>
+
+<script src="/education/education.js"></script>
+</body>
+</html>
