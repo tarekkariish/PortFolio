@@ -35,24 +35,23 @@ span {
 
 nav ul{
     float: right;
-    margin-right: 20px;
 }
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    padding-right: 4px;
 }
 nav ul li a{
-    color: white;
+    color: #ffff;
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 13px;
     border-radius: 20px;
 }
 a.active,a:hover{
-    background-color: rgb(206, 206, 206) ;
-    color: black;
-    transition: .5s;
+    border-bottom: #ff004f 3px solid;
+    border-top: #ff004f 3px solid;
+    transition: 0.3s;
 }
 .checkbtn {
     display: none;
@@ -98,12 +97,8 @@ section {
     padding-top: 20px;
  }
  
- section article p a {
-    color: white;
-    background-color: rgb(63, 86, 137);
-    font-size: 20px;
- }
  
+
  .col-1 {
     flex-basis: 45%;
  }
@@ -115,6 +110,18 @@ section {
  .h1-style {
     text-align: center;
  }
+
+
+ .btn-style{
+    border-radius: 20px;
+    border-bottom: #ff004f 2px solid;
+    border-top: #ff004f 2px solid;
+    transition: height 0.5s;
+    color: #ffff;
+ }
+
+
+
 
 
 
@@ -165,8 +172,10 @@ section {
     font-size: 20px;
   }
 
-  a {
-    color: aqua;
+  .special {
+    border-radius: 5px;
+    color: white;
+    border-bottom: 1px solid #ff004f;
   }
 
   .tab-contents{
@@ -248,18 +257,79 @@ section {
 /*---------------WORK PAGE----------------- */
 
 
+main {
+   padding: 100px;
+  height: 90vh;
+}
 
+.h1 {
+    text-align: center;
+}
 
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    overflow: hidden;
+}
 
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
 
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
 
-
-
-/*---------------CONTACT PAGE----------------- */
-/*---------------CONTACT PAGE----------------- */
-
-.container2 {
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.work:hover img{
+    transform: scale(1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+
+
+
+
+/*---------------CONTACT PAGE----------------- */
+/*---------------CONTACT PAGE----------------- */
+
+.form-container{
+    display: flex;
+    padding: 102px;
+    flex-wrap: wrap;
 }
 
 .contact-left{
@@ -275,9 +345,54 @@ section {
 }
 
 
+.btn {
+    display: block;
+    margin: 40px 1px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white; 
+}
+.btn:hover {
+    border: 1px solid #ff004f;
+    transition: background 0.5s;
+    background-color: #ff004f;
+}
 
+.btn.btn2 {
+    background-color: #ff004f;
+    cursor: pointer;
 
+}
+.btn.btn2:hover {
+    border: 1px solid #ff004f;
+    transition: background 0.5s;
+    background-color: #ff004f;
+}
 
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626 ;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+#msg {
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
+}
 
 
 
@@ -332,6 +447,7 @@ section {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1;
     }
     nav ul li {
         display: block;
@@ -341,17 +457,11 @@ section {
     nav ul li a {
         font-size: 20px;
     }
-    a:hover,a.active{
-        background-color: rgb(206, 206, 206);
-        color: black;
-
-    }
+   
     #check:checked ~ ul {
         left: 0;
     }
-    .icon {
-        color: white;
-    }
+    
     body {
         height: 100vh;
     }
@@ -371,8 +481,9 @@ section {
      /*--------------EDUCATION PAGE---------------- */
      /*--------------EDUCATION PAGE---------------- */
 
-
+     
     
+     
 
-
+  
 }
