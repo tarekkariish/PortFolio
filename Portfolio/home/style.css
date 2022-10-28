@@ -177,6 +177,69 @@ section {
     display: block ;
   }
 
+  .container1{
+    position: absolute;
+    right: 35px;
+    top: 200px;
+    width: 50%;
+    color: black;
+    font-weight: 600;
+    padding: 35px 15px;
+    border-radius: 10px;
+    background-color: rgb(67,70,77);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+}
+.skill:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.bar{
+    position: relative;
+    padding: 6px 8px;
+    background-color: black;
+    border-radius: 20px;
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff004f ;
+    box-shadow: 0 0 5px #185458;
+}
+#html{
+    animation: html 4s forwards;
+}
+@keyframes html{
+    100%{
+        width: 90%;
+    }
+}
+#css{
+    animation: css 4s forwards;
+}
+@keyframes css{
+    100%{
+        width: 90%;
+    }
+}
+#js{
+    animation: js 4s forwards;
+}
+@keyframes js{
+    100%{
+        width: 65%;
+    }
+}
+
+ 
+
 /*---------------WORK PAGE----------------- */
 /*---------------WORK PAGE----------------- */
 
@@ -190,6 +253,22 @@ section {
 
 /*---------------CONTACT PAGE----------------- */
 /*---------------CONTACT PAGE----------------- */
+
+.container2 {
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis : 60%; ;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
 
 
 
